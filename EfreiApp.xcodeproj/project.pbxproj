@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		231F4472151CFC8EC5498413 /* Pods_EfreiApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1A0425C181D120C09A9DFE /* Pods_EfreiApp.framework */; };
 		38133E641E2FA60D00506871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38133E631E2FA60D00506871 /* AppDelegate.swift */; };
 		38133E661E2FA60D00506871 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38133E651E2FA60D00506871 /* ViewController.swift */; };
 		38133E691E2FA60D00506871 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38133E671E2FA60D00506871 /* Main.storyboard */; };
@@ -14,6 +15,18 @@
 		38133E6E1E2FA60D00506871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38133E6C1E2FA60D00506871 /* LaunchScreen.storyboard */; };
 		38133E791E2FA60D00506871 /* EfreiAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38133E781E2FA60D00506871 /* EfreiAppTests.swift */; };
 		38133E841E2FA60D00506871 /* EfreiAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38133E831E2FA60D00506871 /* EfreiAppUITests.swift */; };
+		3878090A1E2FA81B00E44CD2 /* EZSwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387809081E2FA81B00E44CD2 /* EZSwipeController.swift */; };
+		3878090B1E2FA81B00E44CD2 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387809091E2FA81B00E44CD2 /* MenuVC.swift */; };
+		3878090D1E2FAA5400E44CD2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3878090C1E2FAA5400E44CD2 /* LoginViewController.swift */; };
+		388067A71E2FAF1100DB26A0 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388067A61E2FAF1100DB26A0 /* Transition.swift */; };
+		388067A91E2FAF9100DB26A0 /* Walkthrough.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 388067A81E2FAF9100DB26A0 /* Walkthrough.storyboard */; };
+		388067AB1E2FAFA000DB26A0 /* WalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388067AA1E2FAFA000DB26A0 /* WalkThroughViewController.swift */; };
+		388067AD1E2FAFB100DB26A0 /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388067AC1E2FAFB000DB26A0 /* CustomPageViewController.swift */; };
+		388067AF1E2FB02200DB26A0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 388067AE1E2FB02200DB26A0 /* GoogleService-Info.plist */; };
+		388067B11E2FB36100DB26A0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388067B01E2FB36100DB26A0 /* MainViewController.swift */; };
+		388067B71E2FBC7C00DB26A0 /* keyboardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388067B61E2FBC7C00DB26A0 /* keyboardUtils.swift */; };
+		8E3B3F05EA85DA41251F2257 /* Pods_EfreiAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D95C2264258AEBD408EA7F7 /* Pods_EfreiAppTests.framework */; };
+		A85E07DDB21C07AFC2410567 /* Pods_EfreiAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1CF14BCA6A75C97863E031 /* Pods_EfreiAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +60,25 @@
 		38133E7F1E2FA60D00506871 /* EfreiAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EfreiAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38133E831E2FA60D00506871 /* EfreiAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EfreiAppUITests.swift; sourceTree = "<group>"; };
 		38133E851E2FA60D00506871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		387809081E2FA81B00E44CD2 /* EZSwipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZSwipeController.swift; sourceTree = "<group>"; };
+		387809091E2FA81B00E44CD2 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		3878090C1E2FAA5400E44CD2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		388067A61E2FAF1100DB26A0 /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		388067A81E2FAF9100DB26A0 /* Walkthrough.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Walkthrough.storyboard; sourceTree = "<group>"; };
+		388067AA1E2FAFA000DB26A0 /* WalkThroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkThroughViewController.swift; sourceTree = "<group>"; };
+		388067AC1E2FAFB000DB26A0 /* CustomPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
+		388067AE1E2FB02200DB26A0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		388067B01E2FB36100DB26A0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		388067B61E2FBC7C00DB26A0 /* keyboardUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = keyboardUtils.swift; sourceTree = "<group>"; };
+		4D95C2264258AEBD408EA7F7 /* Pods_EfreiAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EfreiAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		772EFC3418BA1BCAB40B55D2 /* Pods-EfreiAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EfreiAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EfreiAppTests/Pods-EfreiAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B1A0425C181D120C09A9DFE /* Pods_EfreiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EfreiApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		941FB187F2CA3A80B9643249 /* Pods-EfreiAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EfreiAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EfreiAppTests/Pods-EfreiAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C2CB06AE04DD41EDCC5A2F8 /* Pods-EfreiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EfreiApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EfreiApp/Pods-EfreiApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9EE2AF6CC6DB0B919AB59E11 /* Pods-EfreiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EfreiApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-EfreiApp/Pods-EfreiApp.release.xcconfig"; sourceTree = "<group>"; };
+		AA6CC0947F476AF020792753 /* Pods-EfreiAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EfreiAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EfreiAppUITests/Pods-EfreiAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D3976CCD0F107B4AA97C961C /* Pods-EfreiAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EfreiAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EfreiAppUITests/Pods-EfreiAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF1CF14BCA6A75C97863E031 /* Pods_EfreiAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EfreiAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				231F4472151CFC8EC5498413 /* Pods_EfreiApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E3B3F05EA85DA41251F2257 /* Pods_EfreiAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A85E07DDB21C07AFC2410567 /* Pods_EfreiAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +116,8 @@
 				38133E771E2FA60D00506871 /* EfreiAppTests */,
 				38133E821E2FA60D00506871 /* EfreiAppUITests */,
 				38133E611E2FA60D00506871 /* Products */,
+				BEEF8EAF497D715C2746FCA3 /* Pods */,
+				D3A48C33FFB8DCB9269DBCA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +134,21 @@
 		38133E621E2FA60D00506871 /* EfreiApp */ = {
 			isa = PBXGroup;
 			children = (
+				388067A61E2FAF1100DB26A0 /* Transition.swift */,
 				38133E631E2FA60D00506871 /* AppDelegate.swift */,
 				38133E651E2FA60D00506871 /* ViewController.swift */,
+				387809081E2FA81B00E44CD2 /* EZSwipeController.swift */,
+				387809091E2FA81B00E44CD2 /* MenuVC.swift */,
+				3878090C1E2FAA5400E44CD2 /* LoginViewController.swift */,
+				388067B01E2FB36100DB26A0 /* MainViewController.swift */,
+				388067B61E2FBC7C00DB26A0 /* keyboardUtils.swift */,
+				388067AC1E2FAFB000DB26A0 /* CustomPageViewController.swift */,
+				388067AA1E2FAFA000DB26A0 /* WalkThroughViewController.swift */,
 				38133E671E2FA60D00506871 /* Main.storyboard */,
-				38133E6A1E2FA60D00506871 /* Assets.xcassets */,
+				388067A81E2FAF9100DB26A0 /* Walkthrough.storyboard */,
 				38133E6C1E2FA60D00506871 /* LaunchScreen.storyboard */,
+				38133E6A1E2FA60D00506871 /* Assets.xcassets */,
+				388067AE1E2FB02200DB26A0 /* GoogleService-Info.plist */,
 				38133E6F1E2FA60D00506871 /* Info.plist */,
 			);
 			path = EfreiApp;
@@ -125,6 +172,29 @@
 			path = EfreiAppUITests;
 			sourceTree = "<group>";
 		};
+		BEEF8EAF497D715C2746FCA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C2CB06AE04DD41EDCC5A2F8 /* Pods-EfreiApp.debug.xcconfig */,
+				9EE2AF6CC6DB0B919AB59E11 /* Pods-EfreiApp.release.xcconfig */,
+				941FB187F2CA3A80B9643249 /* Pods-EfreiAppTests.debug.xcconfig */,
+				772EFC3418BA1BCAB40B55D2 /* Pods-EfreiAppTests.release.xcconfig */,
+				D3976CCD0F107B4AA97C961C /* Pods-EfreiAppUITests.debug.xcconfig */,
+				AA6CC0947F476AF020792753 /* Pods-EfreiAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3A48C33FFB8DCB9269DBCA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B1A0425C181D120C09A9DFE /* Pods_EfreiApp.framework */,
+				4D95C2264258AEBD408EA7F7 /* Pods_EfreiAppTests.framework */,
+				FF1CF14BCA6A75C97863E031 /* Pods_EfreiAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38133E881E2FA60D00506871 /* Build configuration list for PBXNativeTarget "EfreiApp" */;
 			buildPhases = (
+				C5A15E4A72E5DB789344AEE1 /* [CP] Check Pods Manifest.lock */,
 				38133E5C1E2FA60D00506871 /* Sources */,
 				38133E5D1E2FA60D00506871 /* Frameworks */,
 				38133E5E1E2FA60D00506871 /* Resources */,
+				D9B731720C6A43DE78553994 /* [CP] Embed Pods Frameworks */,
+				2D1D0B1D1BA11337D4FBC924 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38133E8B1E2FA60D00506871 /* Build configuration list for PBXNativeTarget "EfreiAppTests" */;
 			buildPhases = (
+				C241542C04C4E1B253A54D38 /* [CP] Check Pods Manifest.lock */,
 				38133E701E2FA60D00506871 /* Sources */,
 				38133E711E2FA60D00506871 /* Frameworks */,
 				38133E721E2FA60D00506871 /* Resources */,
+				1DE3C99755DE7E96B02D80AE /* [CP] Embed Pods Frameworks */,
+				20E633AD6ADFFB20D7309F3C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38133E8E1E2FA60D00506871 /* Build configuration list for PBXNativeTarget "EfreiAppUITests" */;
 			buildPhases = (
+				229250F2D37BD5DD0822F8EF /* [CP] Check Pods Manifest.lock */,
 				38133E7B1E2FA60D00506871 /* Sources */,
 				38133E7C1E2FA60D00506871 /* Frameworks */,
 				38133E7D1E2FA60D00506871 /* Resources */,
+				8423F4DA135FB751A6082B8A /* [CP] Embed Pods Frameworks */,
+				E87FFE85B20FF1B671073FDB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,7 +272,7 @@
 				TargetAttributes = {
 					38133E5F1E2FA60D00506871 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = X9UAR68B43;
+						DevelopmentTeam = 32M3E59Q24;
 						ProvisioningStyle = Automatic;
 					};
 					38133E731E2FA60D00506871 = {
@@ -237,7 +316,9 @@
 			files = (
 				38133E6E1E2FA60D00506871 /* LaunchScreen.storyboard in Resources */,
 				38133E6B1E2FA60D00506871 /* Assets.xcassets in Resources */,
+				388067A91E2FAF9100DB26A0 /* Walkthrough.storyboard in Resources */,
 				38133E691E2FA60D00506871 /* Main.storyboard in Resources */,
+				388067AF1E2FB02200DB26A0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,12 +338,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DE3C99755DE7E96B02D80AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EfreiAppTests/Pods-EfreiAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20E633AD6ADFFB20D7309F3C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EfreiAppTests/Pods-EfreiAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		229250F2D37BD5DD0822F8EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2D1D0B1D1BA11337D4FBC924 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EfreiApp/Pods-EfreiApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8423F4DA135FB751A6082B8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EfreiAppUITests/Pods-EfreiAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C241542C04C4E1B253A54D38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5A15E4A72E5DB789344AEE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9B731720C6A43DE78553994 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EfreiApp/Pods-EfreiApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E87FFE85B20FF1B671073FDB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EfreiAppUITests/Pods-EfreiAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		38133E5C1E2FA60D00506871 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				388067AD1E2FAFB100DB26A0 /* CustomPageViewController.swift in Sources */,
+				388067A71E2FAF1100DB26A0 /* Transition.swift in Sources */,
+				3878090A1E2FA81B00E44CD2 /* EZSwipeController.swift in Sources */,
+				3878090B1E2FA81B00E44CD2 /* MenuVC.swift in Sources */,
+				388067B71E2FBC7C00DB26A0 /* keyboardUtils.swift in Sources */,
 				38133E661E2FA60D00506871 /* ViewController.swift in Sources */,
+				3878090D1E2FAA5400E44CD2 /* LoginViewController.swift in Sources */,
+				388067B11E2FB36100DB26A0 /* MainViewController.swift in Sources */,
+				388067AB1E2FAFA000DB26A0 /* WalkThroughViewController.swift in Sources */,
 				38133E641E2FA60D00506871 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,12 +640,13 @@
 		};
 		38133E891E2FA60D00506871 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C2CB06AE04DD41EDCC5A2F8 /* Pods-EfreiApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X9UAR68B43;
+				DEVELOPMENT_TEAM = 32M3E59Q24;
 				INFOPLIST_FILE = EfreiApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tastyapp.EfreiApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tastyapp.EfreiApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -426,12 +654,13 @@
 		};
 		38133E8A1E2FA60D00506871 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EE2AF6CC6DB0B919AB59E11 /* Pods-EfreiApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X9UAR68B43;
+				DEVELOPMENT_TEAM = 32M3E59Q24;
 				INFOPLIST_FILE = EfreiApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tastyapp.EfreiApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tastyapp.EfreiApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -439,6 +668,7 @@
 		};
 		38133E8C1E2FA60D00506871 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 941FB187F2CA3A80B9643249 /* Pods-EfreiAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +684,7 @@
 		};
 		38133E8D1E2FA60D00506871 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 772EFC3418BA1BCAB40B55D2 /* Pods-EfreiAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +700,7 @@
 		};
 		38133E8F1E2FA60D00506871 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3976CCD0F107B4AA97C961C /* Pods-EfreiAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = X9UAR68B43;
@@ -483,6 +715,7 @@
 		};
 		38133E901E2FA60D00506871 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA6CC0947F476AF020792753 /* Pods-EfreiAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = X9UAR68B43;
@@ -514,6 +747,7 @@
 				38133E8A1E2FA60D00506871 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38133E8B1E2FA60D00506871 /* Build configuration list for PBXNativeTarget "EfreiAppTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +756,7 @@
 				38133E8D1E2FA60D00506871 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38133E8E1E2FA60D00506871 /* Build configuration list for PBXNativeTarget "EfreiAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +765,7 @@
 				38133E901E2FA60D00506871 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

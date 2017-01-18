@@ -1,0 +1,6 @@
+framework module Pods_EfreiApp {
+  umbrella header "Pods-EfreiApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
