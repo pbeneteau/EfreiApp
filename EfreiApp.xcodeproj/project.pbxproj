@@ -642,6 +642,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9C2CB06AE04DD41EDCC5A2F8 /* Pods-EfreiApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 32M3E59Q24;
 				INFOPLIST_FILE = EfreiApp/Info.plist;
@@ -656,6 +657,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9EE2AF6CC6DB0B919AB59E11 /* Pods-EfreiApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 32M3E59Q24;
 				INFOPLIST_FILE = EfreiApp/Info.plist;
