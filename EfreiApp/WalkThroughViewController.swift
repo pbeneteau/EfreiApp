@@ -21,6 +21,7 @@ class WalkThroughViewController: UIViewController, BWWalkthroughViewControllerDe
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         showWalkthrough()
+        
     }
 
     override func didReceiveMemoryWarning() {

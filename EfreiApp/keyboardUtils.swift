@@ -17,8 +17,8 @@ class keyboardUtils: UIViewController, UIGestureRecognizerDelegate, UITextFieldD
     }
     
     func addObservers() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: .UIKeyboardWillShow, object: view.window)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: .UIKeyboardWillHide, object: view.window)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardWillShow, object: view.window)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: .UIKeyboardWillHide, object: view.window)
     }
     
     func removeObservers() {
@@ -27,31 +27,6 @@ class keyboardUtils: UIViewController, UIGestureRecognizerDelegate, UITextFieldD
         
     }
     
-    func keyboardWillHide(_ notification: Notification) {
-        if let keyboardHeight = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue.size.height {
-            view.frame.origin.y += (keyboardHeight - 30)
-        }
-    }
-    
-    func keyboardWillShow(_ notification: Notification) {
-        
-        if let userInfo = notification.userInfo,
-            let keyboardSize = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue.size,
-            let offset = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.size {
-            
-            if keyboardSize.height == offset.height {
-                if self.view.frame.origin.y == 0 {
-                    UIView.animate(withDuration: 0.1, animations: { () -> Void in
-                        self.view.frame.origin.y -= (keyboardSize.height - 30)
-                    })
-                }
-            } else {
-                UIView.animate(withDuration: 0.1, animations: { () -> Void in
-                    self.view.frame.origin.y += (keyboardSize.height - 30) - offset.height
-                })
-            }
-        }
-    }
     
     func setDelegates(_ fields: AnyObject...) {
         for item in fields {
@@ -80,7 +55,22 @@ class keyboardUtils: UIViewController, UIGestureRecognizerDelegate, UITextFieldD
         }
         return true
     }
+    func keyboardWillShow(notification: NSNotification) {
+        
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0{
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+        
+    }
     
+    func keyboardWillHide(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y != 0{
+                self.view.frame.origin.y += keyboardSize.height
+            }
+        }
+    }
 }
 
-    

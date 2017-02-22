@@ -14,13 +14,17 @@ class LoginViewController: keyboardUtils {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var telField: UITextField!
+    @IBOutlet weak var adressField: UITextField!
     
     @IBOutlet weak var loginEmailField: UITextField!
+    
     @IBOutlet weak var loginPasswordField: UITextField!
     
     @IBOutlet weak var loginView: UIView!
-    @IBOutlet weak var signinView: UIView!
-
+    @IBOutlet weak var signInView: UIView!
+    
+    @IBOutlet weak var selectionBar: UIView!
     
     let ref = FIRDatabase.database().reference() // Firebase database ref
     let user = FIRAuth.auth()?.currentUser // User ref
@@ -30,15 +34,20 @@ class LoginViewController: keyboardUtils {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addObservers()
-        
         if ( user != nil) {
             // if user already logged in...
             transitionSegue.segue.switchToNavigationController()
         }
         
+        loginView.frame.origin.x = 39
+        signInView.frame.origin.x = 39 - 400
+                
+        setPredictiveState(state: .no)
+        
+        addObservers()
+        
         // delegates for textFields
-        setDelegates(nameField, emailField, passwordField, loginEmailField,  loginPasswordField)
+        setDelegates(nameField, emailField, passwordField, loginEmailField,  loginPasswordField, telField, adressField)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -63,11 +72,11 @@ class LoginViewController: keyboardUtils {
     }
     
     // Signin
-    @IBAction func signInButton(_ sender: Any) {
+    @IBAction func signInButtonAction(_ sender: Any) {
         dismissKeyboard()
         
-        if ((emailField.text == "") || (passwordField.text == "") || (nameField.text == "")) {
-            let alertController = UIAlertController(title: "Erreur", message: "Veuillez saisir votre mot de passe et adresse email", preferredStyle: .alert)
+        if ((emailField.text == "") || (passwordField.text == "") || (nameField.text == "") || (telField.text == "") || (adressField.text == "")) {
+            let alertController = UIAlertController(title: "Erreur", message: "Please enter all informations needed", preferredStyle: .alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
@@ -81,14 +90,15 @@ class LoginViewController: keyboardUtils {
                     
                     self.ref.child("users").child(user!.uid).child("name").setValue(self.nameField.text)
                     self.ref.child("users").child(user!.uid).child("email").setValue(self.emailField.text)
+                    self.ref.child("users").child(user!.uid).child("tel").setValue(self.telField.text)
+                    self.ref.child("users").child(user!.uid).child("address").setValue(self.adressField.text)
                     
-                            
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "MenuVC")
                     self.present(vc!, animated: true, completion: nil)
                     
                 } else {
                     
-                    let alertController = UIAlertController(title: "Erreur", message: error?.localizedDescription, preferredStyle: .alert)
+                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                     
                     let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     alertController.addAction(defaultAction)
@@ -107,7 +117,7 @@ class LoginViewController: keyboardUtils {
             
             //Alert to tell the user that there was an error because they didn't fill anything in the textfields because they didn't fill anything in
             
-            let alertController = UIAlertController(title: "Error", message: "Please enter an email and password.", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Error", message: "Please enter your password and email", preferredStyle: .alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
@@ -142,11 +152,10 @@ class LoginViewController: keyboardUtils {
     }
     
     @IBAction func resetPassword(_ sender: Any) {
-    
-        passwordField.isHidden = true
         
-        if self.emailField.text == "" {
-            let alertController = UIAlertController(title: "Oops!", message: "Entrez un email.", preferredStyle: .alert)
+        
+        if self.loginEmailField.text == "" {
+            let alertController = UIAlertController(title: "Oops!", message: "Please enter an email.", preferredStyle: .alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
@@ -154,18 +163,18 @@ class LoginViewController: keyboardUtils {
             present(alertController, animated: true, completion: nil)
             
         } else {
-            FIRAuth.auth()?.sendPasswordReset(withEmail: self.emailField.text!, completion: { (error) in
+            FIRAuth.auth()?.sendPasswordReset(withEmail: self.loginEmailField.text!, completion: { (error) in
                 
                 var title = ""
                 var message = ""
                 
                 if error != nil {
-                    title = "Erreur!"
+                    title = "Error!"
                     message = (error?.localizedDescription)!
                 } else {
                     title = "Succès!"
-                    message = "Un mail vous a été envoyé"
-                    self.emailField.text = ""
+                    message = "A mail have been sent"
+                    self.loginEmailField.text = ""
                 }
                 
                 let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -176,18 +185,61 @@ class LoginViewController: keyboardUtils {
                 self.present(alertController, animated: true, completion: nil)
             })
         }
-        passwordField.isHidden = false
     }
     
-    @IBAction func showLoginview(_ sender: Any) {
-        loginView.isHidden = false
-        signinView.isHidden = true
+    
+    @IBAction func showLoginView(_ sender: Any) {
+        
+        if loginView.frame.origin.x == 439.0 {
+            
+            animation(actual: "login")
+        }
     }
+    
     @IBAction func showSigninView(_ sender: Any) {
-        loginView.isHidden = true
-        signinView.isHidden = false
+       
+        if signInView.frame.origin.x == -361.0 {
+            
+            animation(actual: "signin")
+        }
     }
-
+    
+    func setPredictiveState(state: UITextAutocorrectionType) {
+        
+        nameField.autocorrectionType = state
+        emailField.autocorrectionType = state
+        passwordField.autocorrectionType = state
+        adressField.autocorrectionType = state
+        telField.autocorrectionType = state
+        
+        loginPasswordField.autocorrectionType = state
+        loginEmailField.autocorrectionType = state
+    }
+    
+    func animation(actual: String) {
+        
+        UIView.animateKeyframes(withDuration: 0.2, delay: 0, options: .allowUserInteraction, animations: {
+            
+            if actual == "login" {
+            
+                self.selectionBar.frame.origin.x -= 185.5
+                if self.signInView.frame.origin.x != -439 {
+                    self.signInView.frame.origin.x -= 400.0
+                }
+                self.loginView.frame.origin.x -= 400.0
+                
+            } else {
+                
+                self.selectionBar.frame.origin.x += 185.5
+                self.signInView.frame.origin.x += 400.0
+                self.loginView.frame.origin.x += 400.0
+            }
+            
+            
+        })
+        
+    }
+    
 }
 
 

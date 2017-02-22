@@ -48,6 +48,10 @@ PODS:
   - GoogleToolboxForMac/NSString+URLArguments (2.1.0)
   - GTMSessionFetcher/Core (1.1.7)
   - Hero (0.1.0)
+  - PermissionScope (1.1.1)
+  - Spring (1.0.3)
+  - SwiftLocation (1.1.1)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - BWWalkthrough
@@ -57,6 +61,20 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - Hero
+  - PermissionScope
+  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
+  - SwiftLocation (>= 1.0.6)
+  - SwiftyJSON
+
+EXTERNAL SOURCES:
+  Spring:
+    :branch: swift3
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 3a9227c6e9157e7b47f5ac1ee5abab2a56b50002
+    :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
   BWWalkthrough: ca4d3c8526486add00bf38e20e9f3e218bda1ade
@@ -72,7 +90,11 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
   GTMSessionFetcher: a1f8ed39e4fe21c68957daed472c7afbcdf29166
   Hero: 14038043c41ea53ba1aa43b4d3655f377d78bea6
+  PermissionScope: a30c16e015779ba27c97c124e7539e27b5829de2
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
+  SwiftLocation: aac16955b508c46b82bf07fcceb7e2a3b382b8d5
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: b61be49f6c3db96f44481d6dce828ad49b3ac2a4
+PODFILE CHECKSUM: 09b6b13891cb51d86d66ad5ac3a79f579a2a6e01
 
 COCOAPODS: 1.1.1

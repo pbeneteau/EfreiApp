@@ -12,6 +12,13 @@ target 'EfreiApp' do
   pod 'Firebase/Storage'
   pod 'BWWalkthrough'
   pod 'Hero'
+  pod 'PermissionScope'
+  pod 'SwiftLocation', '>= 1.0.6'
+  pod 'SwiftyJSON'
+
+  
+  pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
+
   target 'EfreiAppTests' do
     inherit! :search_paths
     # Pods for testing
